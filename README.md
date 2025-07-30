@@ -28,9 +28,6 @@ My name is Lisa, and this is some basic stuff about me.
 <br>
 - 📫 How to reach me: my work email address is amimolisa23@gmail.com
 <br>
-- 😄 Pronouns: they/she
-<br>
 - ⚡ Fun fact: I love astronomy and botany!
 <br>
 <br>
-<a href="https://roadmap.sh"><img src="https://roadmap.sh/card/wide/66c4637134a9226f3835918e?variant=dark&roadmaps=full-stack" alt="roadmap.sh"/></a>
