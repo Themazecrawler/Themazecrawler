@@ -1,33 +1,59 @@
-Hi there 👋
+# 👋 Hi there, I'm Themazecrawler!
 
-<!--
-**Themazecrawler/Themazecrawler** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Welcome to my GitHub profile! I'm a passionate developer interested in building innovative, user-centric solutions across various domains. My projects blend creativity with technical expertise, and I love collaborating on open-source and impactful ideas.
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/25423296/163456776-7f95b81a-f1ed-45f7-b7ab-8fa810d529fa.png">
-  <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png">
-  <img alt="Shows an illustrated sun in light mode and a moon with stars in dark mode." src="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png" width="500">
-</picture>
-<br>
-My name is Lisa, and this is some basic stuff about me.
-<br>
-- 🔭 I’m currently working on javascript.
-<br>
-- 🌱 I’m currently learning how to be a fullstack developer.
-<br>
-- 📫 How to reach me: my work email address is amimolisa23@gmail.com
-<br>
-- ⚡ Fun fact: I love astronomy and botany!
-<br>
-<br>
+## 🚀 Projects & Repositories
+
+**Here’s an up-to-date list of my primary repositories and what they entail:**
+
+- [**StimaSense**](https://github.com/Themazecrawler/StimaSense)  
+  *Language: TypeScript | Public*  
+  _Description:_ A data-driven analytics and decision support platform. 
+
+- [**SmartRecipe**](https://github.com/Themazecrawler/SmartRecipe)  
+  *Language: TypeScript | Private*  
+  _Description:_ A full-stack AI-powered application that allows users to enter the ingredients they have and instantly receive creative, step-by-step recipe suggestions. The system stores user favorites for later access and personalizes recommendations over time.  
+  [Live App](https://smart-recipe-swart.vercel.app)
+
+- [**SACE**](https://github.com/Themazecrawler/SACE)  
+  *Language: TypeScript | Private*  
+  _Description:_ 
+
+- [**CollabSpace**](https://github.com/Themazecrawler/CollabSpace)  
+  *Language: TypeScript | Public*  
+  _Description:_  A collaboration platform  for seamless team communication, project management, or knowledge sharing.  
+  [Live App](https://collab-space-theta.vercel.app)
+
+- [**vislonaproject-creator/sace**](https://github.com/vislonaproject-creator/sace)  
+  *Language: TypeScript | Private*  
+  _Description:_ **SACE – AI-Powered Style Suggestion Platform.** A collaborative effort for an AI system that suggests personal styles, blending fashion with artificial intelligence.
+
+---
+
+## 💼 What I do
+
+- 💡 Ideate and build practical tech solutions
+- 🛠️ Work with Python, JavaScript, and modern frameworks
+- 🌱 Always learning new technologies
+- 🤝 Love collaborating with other developers
+
+---
+
+## 📫 How to reach me
+
+- [GitHub Issues](https://github.com/Themazecrawler)
+- [Email](amimolisa23@gmail.com)
+
+---
+
+## 🧩 Fun facts
+
+- I enjoy solving puzzles and tackling complex coding challenges
+- I'm always up for learning something new or joining exciting projects
+
+---
+
+Thanks for stopping by! ⭐️  
+Let's build something amazing together.
