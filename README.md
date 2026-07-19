@@ -1,16 +1,16 @@
-# 👋 Hi there, I'm Themazecrawler!
+# Hi there, I'm Themazecrawler!
 
 Welcome to my GitHub profile! I'm a passionate developer interested in building innovative, user-centric solutions across various domains. My projects blend creativity with technical expertise, and I love collaborating on open-source and impactful ideas.
 
 ---
 
-## 🚀 Projects & Repositories
+## Projects & Repositories
 
 **Here’s an up-to-date list of my primary repositories and what they entail:**
 
 - [**StimaSense**](https://github.com/Themazecrawler/StimaSense)  
   *Language: TypeScript | Public*  
-  _Description:_ A data-driven analytics and decision support platform. 
+  _Description:_ A comprehensive power monitoring solution that combines artificial intelligence with real-time data to predict and monitor power outages. The application provides users with personalized alerts, outage reporting capabilities, and detailed analytics to help manage power-related issues effectively. 
 
 - [**SmartRecipe**](https://github.com/Themazecrawler/SmartRecipe)  
   *Language: TypeScript | Private*  
@@ -29,6 +29,14 @@ Welcome to my GitHub profile! I'm a passionate developer interested in building 
 - [**vislonaproject-creator/sace**](https://github.com/vislonaproject-creator/sace)  
   *Language: TypeScript | Private*  
   _Description:_ **SACE – AI-Powered Style Suggestion Platform.** A collaborative effort for an AI system that suggests personal styles, blending fashion with artificial intelligence.
+
+- [**Bloom**](https://github.com/Themazecrawler/Bloom-dating-app)  
+  *Language: Dart*  
+  _Description:_ A modern Flutter-based dating application designed specifically for Black queer women, celebrating cultural identity and fostering authentic connections through a beautiful, inclusive platform
+
+- [**Rapid Response**](https://github.com/Themazecrawler/Rapid-Response)  
+  *Framework: React Native*  
+  _Description:_ A React Native mobile application with a Node.js/Express backend for emergency alert management in educational institutions
 
 ---
 
