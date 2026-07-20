@@ -17,9 +17,9 @@ Welcome to my GitHub profile! I'm a passionate developer interested in building 
   _Description:_ A full-stack AI-powered application that allows users to enter the ingredients they have and instantly receive creative, step-by-step recipe suggestions. The system stores user favorites for later access and personalizes recommendations over time.  
   [Live App](https://smart-recipe-swart.vercel.app)
 
-- [**SACE**](https://github.com/Themazecrawler/SACE)  
-  *Language: TypeScript | Private*  
-  _Description:_ 
+- [**WalletIO**](https://github.com/Themazecrawler/WalletIO)  
+  *Language: TypeScript | Public*  
+  _Description:_ A modern Web3 crypto wallet app that gives users a clear, real-time view of their digital assets. Live app : https://walletio.webflow.io/
 
 - [**CollabSpace**](https://github.com/Themazecrawler/CollabSpace)  
   *Language: TypeScript | Public*  
@@ -37,6 +37,11 @@ Welcome to my GitHub profile! I'm a passionate developer interested in building 
 - [**Rapid Response**](https://github.com/Themazecrawler/Rapid-Response)  
   *Framework: React Native*  
   _Description:_ A React Native mobile application with a Node.js/Express backend for emergency alert management in educational institutions
+
+- [**Hora**](https://github.com/Themazecrawler/Hora2)  
+  *Language: TypeScript | Public*  
+  _Description:_ A cross-platform menstrual cycle tracking application built with React Native and Expo, featuring seasonal UI, privacy-first onboarding, cycle predictions,
+  symptom tracking, and wellness insights.
 
 ---
 
