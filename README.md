@@ -69,7 +69,7 @@ I'm a passionate developer interested in building innovative, user-centric solut
   _Description:_ A modern Flutter-based dating application designed specifically for Black queer women, celebrating cultural identity and fostering authentic connections through a beautiful, inclusive platform
 
 - [**Rapid Response**](https://github.com/Themazecrawler/Rapid-Response)  
-  *Framework: React Native*  
+  *Language: Kotlin*  
   _Description:_ A React Native mobile application with a Node.js/Express backend for emergency alert management in educational institutions
 
 - [**Hora**](https://github.com/Themazecrawler/Hora2)  
