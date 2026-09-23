@@ -81,16 +81,10 @@ I'm a passionate developer interested in building innovative, user-centric solut
 
 ### 📊 GitHub Stats
 
-<p align="center">
-  <img height="165" src="https://github-readme-stats-five-sigma-99.vercel.app/api?username=Themazecrawler&show_icons=true&theme=tokyonight&title_color=2ea043&icon_color=2ea043&hide_border=true&bg_color=00000000&count_private=true" alt="stats" />
-  <img height="165" src="https://github-readme-stats-five-sigma-99.vercel.app/api/top-langs/?username=Themazecrawler&layout=compact&theme=tokyonight&title_color=2ea043&icon_color=2ea043&hide_border=true&bg_color=00000000&langs_count=8" alt="top langs" />
-</p>
+[![GitHub Stats](https://github-stats-extended.vercel.app/api/top-langs?username=Themazecrawler&layout=donut-vertical&langs_count=10&theme=omni)](https://github-stats-extended.vercel.app/api/top-langs?username=Themazecrawler&layout=donut-vertical&langs_count=10&theme=synthwave)
 
-### 📈 Contribution Graph
+[![GitHub Stats](https://github-stats-extended.vercel.app/api?username=Themazecrawler&rank_icon=github&show_icons=true&include_all_commits=true&theme=synthwave)](https://github-stats-extended.vercel.app/api?username=Themazecrawler&rank_icon=github&show_icons=true&include_all_commits=true&theme=synthwave)
 
-<p align="center">
-  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Themazecrawler&bg_color=00000000&color=2ea043&line=2ea043&point=c9d1d9&area=true&hide_border=true" alt="activity graph" />
-</p>
 
 ### 💭 Dev Quote
 
