@@ -81,9 +81,7 @@ I'm a passionate developer interested in building innovative, user-centric solut
 
 ### 📊 GitHub Stats
 
-[![GitHub Stats](https://github-stats-extended.vercel.app/api/top-langs?username=Themazecrawler&layout=donut-vertical&langs_count=10&theme=omni)](https://github-stats-extended.vercel.app/api/top-langs?username=Themazecrawler&layout=donut-vertical&langs_count=10&theme=synthwave)
-
-[![GitHub Stats](https://github-stats-extended.vercel.app/api?username=Themazecrawler&rank_icon=github&show_icons=true&include_all_commits=true&theme=synthwave)](https://github-stats-extended.vercel.app/api?username=Themazecrawler&rank_icon=github&show_icons=true&include_all_commits=true&theme=synthwave)
+[![GitHub Stats](https://github-stats-extended.vercel.app/api/top-langs?username=Themazecrawler&layout=donut-vertical&langs_count=10&theme=synthwave)](https://github-stats-extended.vercel.app/api/top-langs?username=Themazecrawler&layout=donut-vertical&langs_count=10&theme=synthwave)[![GitHub Stats](https://github-stats-extended.vercel.app/api?username=Themazecrawler&rank_icon=github&show_icons=true&include_all_commits=true&theme=synthwave)](https://github-stats-extended.vercel.app/api?username=Themazecrawler&rank_icon=github&show_icons=true&include_all_commits=true&theme=synthwave)
 
 
 ### 💭 Dev Quote
