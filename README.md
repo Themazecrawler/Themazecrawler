@@ -36,6 +36,9 @@ I'm a passionate developer interested in building innovative, user-centric solut
 
 <p align="left">
   <a href="mailto:amimolisa23@gmail.com" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="https://www.upwork.com/freelancers/~01ac3be9aeafc81dfb" target="_blank">
+  <img src="https://img.shields.io/badge/Upwork-14A800?style=for-the-badge&logo=upwork&logoColor=white" alt="Upwork">
+</a>
 </p>
 
 ## Projects & Repositories
