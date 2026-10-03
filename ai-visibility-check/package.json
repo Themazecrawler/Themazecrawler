@@ -1,0 +1,9 @@
+{
+  "name": "ai-visibility-check",
+  "version": "0.1.0",
+  "description": "See how much of a web page an AI crawler can actually read, then generate the fix.",
+  "type": "module",
+  "bin": { "ai-visibility-check": "check.mjs" },
+  "scripts": { "check": "node check.mjs" },
+  "dependencies": { "playwright": "^1.56.0" }
+}
