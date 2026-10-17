@@ -8,6 +8,8 @@ on:
     branches: [main]
     paths:
       - scripts/update_gnome_activity.py
+      - scripts/render_gnome_card.py
+      - assets/gnome-stats-template.svg
       - .github/workflows/gnome-activity.yml
 
 permissions:
@@ -29,7 +31,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add README.md
+          git add README.md assets/gnome-stats.svg
           if ! git diff --cached --quiet; then
             git commit -m 'Refresh GNOME GitLab activity'
             git push
