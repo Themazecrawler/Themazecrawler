@@ -87,6 +87,37 @@ I'm a passionate developer interested in building innovative, user-centric solut
 [![GitHub Stats](https://github-stats-extended.vercel.app/api/top-langs?username=Themazecrawler&layout=donut-vertical&langs_count=10&theme=synthwave)](https://github-stats-extended.vercel.app/api/top-langs?username=Themazecrawler&layout=donut-vertical&langs_count=10&theme=synthwave) [![GitHub Stats](https://github-stats-extended.vercel.app/api?username=Themazecrawler&rank_icon=github&show_icons=true&include_all_commits=true&theme=synthwave)](https://github-stats-extended.vercel.app/api?username=Themazecrawler&rank_icon=github&show_icons=true&include_all_commits=true&theme=synthwave)
 
 
+<!-- GNOME-ACTIVITY:START -->
+### GNOME / GitLab Contributions
+
+[@themazecrawler on GNOME GitLab](https://gitlab.gnome.org/themazecrawler)
+
+| Merge requests | Merged | Open | Issues opened | Issues discussed (last 90 days) |
+| :---: | :---: | :---: | :---: | :---: |
+| 2 | 1 | 1 | 0 | 5 |
+
+**Recent merge requests**
+
+- **Opened** - [GNOME/mutter!5397: window-actor: Avoid clipping screencast content](https://gitlab.gnome.org/GNOME/mutter/-/merge_requests/5397)
+- **Merged** - [GNOME/mutter!5389: monitor-config-utils: Preserve RGB range and color mode](https://gitlab.gnome.org/GNOME/mutter/-/merge_requests/5389)
+
+**Latest pushed commit per branch (last 90 days)**
+
+- [themazecrawler/mutter e0322efe: cursor-renderer/native: Use dumb buffer stride](https://gitlab.gnome.org/themazecrawler/mutter/-/commit/e0322efea56aa1c925f59f1fd8ab5108087a0410)
+- [themazecrawler/mutter 92903e5a: window-actor: Avoid clipping screencast content](https://gitlab.gnome.org/themazecrawler/mutter/-/commit/92903e5ac4e7ab886056ee61008f57a61028226e)
+- [themazecrawler/mutter d982b891: monitor-config-utils: Preserve RGB range and color mode](https://gitlab.gnome.org/themazecrawler/mutter/-/commit/d982b8912e3093b70610c6559eabfb03b80a78b6)
+
+**Recent issue discussions (last 90 days)**
+
+- [GNOME/mutter#4949: cursor-renderer/native: Dumb cursor buffer upload ignores the buffer stride](https://gitlab.gnome.org/GNOME/mutter/-/issues/4949)
+- [GNOME/gnome-shell#9441: First application launched from the startup overview does not receive keyboard focus](https://gitlab.gnome.org/GNOME/gnome-shell/-/issues/9441)
+- [GNOME/mutter#5078: Window screencast over DMA-BUF is black on some multi-monitor layouts &#40;content clipped on near plane&#41;](https://gitlab.gnome.org/GNOME/mutter/-/issues/5078)
+- [GNOME/mutter#5083: &#96;meta&#95;monitor&#95;config&#95;copy&#40;&#41;&#96; drops &#96;rgb&#95;range&#96; and &#96;color&#95;mode&#96;](https://gitlab.gnome.org/GNOME/mutter/-/issues/5083)
+- [GNOME/gnome-shell#4255: Ability to scroll while holding a window in the overview](https://gitlab.gnome.org/GNOME/gnome-shell/-/issues/4255)
+
+<sub>Updated 2026-10-17 UTC from public GNOME GitLab activity. MR and issue totals cover publicly visible authored items; commits show the latest branch tips from push events rather than a lifetime commit count. GitLab activity is displayed separately from GitHub's contribution graph.</sub>
+<!-- GNOME-ACTIVITY:END -->
+
 ### 💭 Dev Quote
 
 <p align="center">
