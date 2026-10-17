@@ -90,6 +90,7 @@ I'm a passionate developer interested in building innovative, user-centric solut
 <!-- GNOME-ACTIVITY:START -->
 [![GNOME GitLab Stats](./assets/gnome-stats.svg)](https://gitlab.gnome.org/themazecrawler)
 
+[![GitLab Contribution Calendar](./assets/gnome-calendar.svg)](https://gitlab.gnome.org/themazecrawler)
 <!-- GNOME-ACTIVITY:END -->
 
 ### 💭 Dev Quote
