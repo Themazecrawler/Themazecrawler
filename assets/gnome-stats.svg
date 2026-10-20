@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="467" height="195" viewBox="0 0 467 195" fill="none" role="img" aria-labelledby="titleId descId">
         <title id="titleId">Themazecrawler's GitLab Stats</title>
-        <desc id="descId">Total Merge Requests: 2, Total Issues: 0, Total Projects: 2, Total Commits: 12. Public authored issues, contributed projects, and unique authored commit SHAs across public repositories.</desc>
+        <desc id="descId">Total Merge Requests: 5, Total Issues: 0, Total Projects: 3, Total Commits: 26. Public authored issues, contributed projects, and unique authored commit SHAs across public repositories.</desc>
         <style>
       .header {font:600 18px 'Segoe UI',Ubuntu,Sans-Serif;fill:#e2e9ec}
       .stat {font:600 14px 'Segoe UI',Ubuntu,'Helvetica Neue',Sans-Serif;fill:#e5289e}
@@ -35,7 +35,7 @@
     </svg>
   
       <text class="stat  bold" x="25" y="12.5">Total Merge Requests:</text>
-      <text class="stat  bold" x="365" y="12.5" data-testid="stars" text-anchor="end">2</text>
+      <text class="stat  bold" x="365" y="12.5" data-testid="stars" text-anchor="end">5</text>
     </g>
   </g><g transform="translate(0, 25)">
     <g class="stagger" transform="translate(25, 0)">
@@ -55,7 +55,7 @@
     </svg>
   
       <text class="stat  bold" x="25" y="12.5">Total Projects:</text>
-      <text class="stat  bold" x="365" y="12.5" data-testid="prs" text-anchor="end">2</text>
+      <text class="stat  bold" x="365" y="12.5" data-testid="prs" text-anchor="end">3</text>
     </g>
   </g><g transform="translate(0, 75)">
     <g class="stagger" transform="translate(25, 0)">
@@ -65,7 +65,7 @@
     </svg>
   
       <text class="stat  bold" x="25" y="12.5">Total Commits:</text>
-      <text class="stat  bold" x="365" y="12.5" data-testid="issues" text-anchor="end">12</text>
+      <text class="stat  bold" x="365" y="12.5" data-testid="issues" text-anchor="end">26</text>
     </g>
   </g></svg>
   
