@@ -10,6 +10,7 @@ from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 import json
 from pathlib import Path
+import random
 import time
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode
@@ -24,14 +25,19 @@ END = '<!-- GNOME-ACTIVITY:END -->'
 
 def get_url(url):
     request = Request(url, headers={'User-Agent':'GNOME-profile-activity/1.0','Accept':'application/json'})
-    for attempt in range(3):
+    # gitlab.gnome.org occasionally returns 5xx responses for repository
+    # commit queries for a minute or more. Scheduled jobs must outlive that
+    # brief outage rather than abandoning the entire daily refresh.
+    for attempt in range(6):
         try:
             with urlopen(request,timeout=40) as response:
                 return json.load(response), response.headers.get('X-Next-Page','')
         except (HTTPError,URLError,TimeoutError) as error:
-            if (isinstance(error,HTTPError) and error.code != 429 and error.code < 500) or attempt == 2:
+            if (isinstance(error,HTTPError) and error.code != 429 and error.code < 500) or attempt == 5:
                 raise
-            time.sleep(2 ** attempt)
+            delay=min(30,3 * (2 ** attempt)) + random.random()
+            print(f'GitLab request failed ({error}); retrying in {delay:.1f}s: {url}',flush=True)
+            time.sleep(delay)
 
 
 def get(path,**params):
@@ -83,7 +89,9 @@ def main():
         return pages(f'/projects/{pid}/repository/commits',author=author,all='true')
     jobs=[(pid,author) for pid in sorted(repo_ids) for author in sorted(authors)]
     commit_ids=set()
-    with ThreadPoolExecutor(max_workers=6) as pool:
+    # Keep pressure on the public GNOME GitLab API low. Higher concurrency
+    # caused repeatable HTTP 500s in scheduled GitHub Actions runs.
+    with ThreadPoolExecutor(max_workers=2) as pool:
         for commits in pool.map(commits_for,jobs):
             commit_ids.update(c['id'] for c in commits if c['author_name'].casefold() in names)
     # Fetch everything before touching generated files, so API failure retains
