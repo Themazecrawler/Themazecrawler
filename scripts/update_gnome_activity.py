@@ -86,7 +86,16 @@ def main():
     names={name.casefold() for name in authors}
     def commits_for(job):
         pid,author=job
-        return pages(f'/projects/{pid}/repository/commits',author=author,all='true')
+        try:
+            return pages(f'/projects/{pid}/repository/commits',author=author,all='true')
+        except HTTPError as error:
+            # Source forks can be deleted or made private after an MR is
+            # opened. Their commits are normally still present upstream, so
+            # an unavailable repository must not block every future refresh.
+            if error.code == 404:
+                print(f'Skipping unavailable GitLab project {pid}',flush=True)
+                return []
+            raise
     jobs=[(pid,author) for pid in sorted(repo_ids) for author in sorted(authors)]
     commit_ids=set()
     # Keep pressure on the public GNOME GitLab API low. Higher concurrency
