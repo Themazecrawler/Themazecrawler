@@ -1,45 +1,54 @@
-<p align="center">
-  <a href="https://github.com/Themazecrawler">
-    <img src="https://capsule-render.vercel.app/api?type=transparent&fontColor=2ea043&fontSize=54&height=90&width=602&text=Hello!%20I'm%20Lisa." alt="Hello! I&#39;m Lisa." />
-  </a>
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=transparent&fontColor=C98BBE&fontSize=54&height=90&width=602&text=Hello!%20I'm%20Lisa.&font=Playfair%20Display" />
+
+<img src="https://readme-typing-svg.demolab.com?font=Dancing+Script&weight=600&size=30&pause=1000&color=F4A6C1&center=true&vCenter=true&width=550&height=55&lines=Welcome%20to%20my%20GitHub%20profile!" />
+
+</div>
+
+---
+
+## About Me
+
+I'm a software developer interested in building useful software, exploring new technologies, and contributing to open-source projects.
+
+
+## Tech Stack
+
+<p>
+<img src="https://img.shields.io/badge/JavaScript-F4A6C1?style=for-the-badge&logo=javascript&logoColor=493344" />
+<img src="https://img.shields.io/badge/TypeScript-E88EAD?style=for-the-badge&logo=typescript&logoColor=493344" />
+<img src="https://img.shields.io/badge/Python-E8B4D0?style=for-the-badge&logo=python&logoColor=493344" />
+<img src="https://img.shields.io/badge/Java-D9A0D3?style=for-the-badge&logo=openjdk&logoColor=493344" />
+<img src="https://img.shields.io/badge/Kotlin-C98BBE?style=for-the-badge&logo=kotlin&logoColor=493344" />
+<img src="https://img.shields.io/badge/C-B875A8?style=for-the-badge&logo=c&logoColor=FFF1F5" />
+<img src="https://img.shields.io/badge/C++-E88EAD?style=for-the-badge&logo=cplusplus&logoColor=493344" />
+<img src="https://img.shields.io/badge/HTML5-F4A6C1?style=for-the-badge&logo=html5&logoColor=493344" />
+<img src="https://img.shields.io/badge/CSS3-E8B4D0?style=for-the-badge&logo=css3&logoColor=493344" />
+<img src="https://img.shields.io/badge/React-D9A0D3?style=for-the-badge&logo=react&logoColor=493344" />
+<img src="https://img.shields.io/badge/Next.js-C98BBE?style=for-the-badge&logo=nextdotjs&logoColor=493344" />
+<img src="https://img.shields.io/badge/jQuery-B875A8?style=for-the-badge&logo=jquery&logoColor=FFF1F5" />
+<img src="https://img.shields.io/badge/NumPy-F4A6C1?style=for-the-badge&logo=numpy&logoColor=493344" />
+<img src="https://img.shields.io/badge/TensorFlow-E88EAD?style=for-the-badge&logo=tensorflow&logoColor=493344" />
+<img src="https://img.shields.io/badge/Supabase-E8B4D0?style=for-the-badge&logo=supabase&logoColor=493344" />
+<img src="https://img.shields.io/badge/Firebase-D9A0D3?style=for-the-badge&logo=firebase&logoColor=493344" />
+<img src="https://img.shields.io/badge/Docker-C98BBE?style=for-the-badge&logo=docker&logoColor=493344" />
+<img src="https://img.shields.io/badge/GitHub-B875A8?style=for-the-badge&logo=github&logoColor=FFF1F5" />
 </p>
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Caveat&weight=600&size=26&pause=1000&color=ff9bce&center=true&vCenter=true&width=475&height=44&lines=Welcome%20to%20my%20GitHub%20profile!" alt="Typing headlines" />
-</p>
-
-### About Me
-
-I'm a passionate developer interested in building innovative, user-centric solutions across various domains. My projects blend creativity with technical expertise, and I love collaborating on open-source and impactful ideas.
-
-### Tech Stack
-
-<p align="left">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
-  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
-  <img src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white" alt="jQuery" />
-  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
-  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow" />
-  <img src="https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=black" alt="Supabase" />
-  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-</p>
-
+---
 ### Connect With Me
 
 <p align="left">
-  <a href="mailto:amimolisa23@gmail.com" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="mailto:amimolisa23@gmail.com" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Email-E88EAD?style=for-the-badge&logo=gmail&logoColor=493344"/>
+  </a>
   <a href="https://www.upwork.com/freelancers/~01ac3be9aeafc81dfb" target="_blank">
-  <img src="https://img.shields.io/badge/Upwork-14A800?style=for-the-badge&logo=upwork&logoColor=white" alt="Upwork">
+  <img src="https://img.shields.io/badge/Upwork-B875A8?style=for-the-badge&logo=upwork&logoColor=FFF1F5" />
 </a>
 </p>
+
+---
 
 ## Projects & Repositories
 
@@ -82,39 +91,31 @@ I'm a passionate developer interested in building innovative, user-centric solut
 
 ---
 
-### 📊 GitHub Stats
+## GitLab stats
 
-[![GitHub Stats](https://github-stats-extended.vercel.app/api/top-langs?username=Themazecrawler&layout=donut-vertical&langs_count=10&theme=synthwave)](https://github-stats-extended.vercel.app/api/top-langs?username=Themazecrawler&layout=donut-vertical&langs_count=10&theme=synthwave) [![GitHub Stats](https://github-stats-extended.vercel.app/api?username=Themazecrawler&rank_icon=github&show_icons=true&include_all_commits=true&theme=synthwave)](https://github-stats-extended.vercel.app/api?username=Themazecrawler&rank_icon=github&show_icons=true&include_all_commits=true&theme=synthwave)
+<div align="center">
 
+<img src="./assets/gnome-stats.svg" width="100%" />
+<img src="./assets/gnome-calendar.svg" width="100%" />
 
-<!-- GNOME-ACTIVITY:START -->
-[![GNOME GitLab Stats](./assets/gnome-stats.svg)](https://gitlab.gnome.org/themazecrawler)
-
-[![GitLab Contribution Calendar](./assets/gnome-calendar.svg)](https://gitlab.gnome.org/themazecrawler)
-<!-- GNOME-ACTIVITY:END -->
-
-### 💭 Dev Quote
-
-<p align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Dev quote" />
-</p>
-
-## What I do
-
-- 💡 Ideate and build practical tech solutions
-- 🛠️ Work with Python, JavaScript, and modern frameworks
-- 🌱 Always learning new technologies
-- 🤝 Love collaborating with other developers
+</div>
 
 ---
 
-## Fun facts
+## Fun Facts
 
-- I enjoy solving puzzles and tackling complex coding challenges
-- I'm always up for learning something new or joining exciting projects
+- I enjoy exploring different areas of technology.
+- I love learning how things work under the hood.
+- Open source is one of my favourite ways to learn and contribute.
 
 ---
 
-Thanks for stopping by!  
-Let's build something amazing together.
-<p align="center"><i>⭐️ From <a href="https://github.com/Themazecrawler">Themazecrawler</a></i></p>
+<div align="center">
+
+<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" />
+
+<br />
+
+<sub>Thanks for stopping by ♡</sub>
+
+</div>
