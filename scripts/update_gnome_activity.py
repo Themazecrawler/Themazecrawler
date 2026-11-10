@@ -25,15 +25,19 @@ END = '<!-- GNOME-ACTIVITY:END -->'
 
 def get_url(url):
     request = Request(url, headers={'User-Agent':'GNOME-profile-activity/1.0','Accept':'application/json'})
-    # gitlab.gnome.org occasionally returns 5xx responses for repository
-    # commit queries for a minute or more. Scheduled jobs must outlive that
-    # brief outage rather than abandoning the entire daily refresh.
+    # gitlab.gnome.org occasionally returns transient responses for repository
+    # and calendar queries. Scheduled jobs must outlive brief endpoint quirks
+    # rather than abandoning the entire daily refresh.
     for attempt in range(6):
         try:
             with urlopen(request,timeout=40) as response:
                 return json.load(response), response.headers.get('X-Next-Page','')
         except (HTTPError,URLError,TimeoutError) as error:
-            if (isinstance(error,HTTPError) and error.code != 429 and error.code < 500) or attempt == 5:
+            if isinstance(error, HTTPError):
+                retryable = error.code in (406, 429) or error.code >= 500
+            else:
+                retryable = True
+            if not retryable or attempt == 5:
                 raise
             delay=min(30,3 * (2 ** attempt)) + random.random()
             print(f'GitLab request failed ({error}); retrying in {delay:.1f}s: {url}',flush=True)
@@ -109,7 +113,7 @@ def main():
     readme=ROOT/'README.md';original=readme.read_text()
     if original.count(START)!=1 or original.count(END)!=1:
         raise RuntimeError('Expected exactly one activity marker pair')
-    section='[![GNOME GitLab Stats](./assets/gnome-stats.svg)](https://gitlab.gnome.org/themazecrawler)\n\n[![GitLab Contribution Calendar](./assets/gnome-calendar.svg)](https://gitlab.gnome.org/themazecrawler)'
+    section='[![GNOME GitLab Stats](./assets/gnome-stats.svg)](https://gitlab.gnome.org/themazecrawler)\n\n[![GitLab Contribution Calendar](./assets/gnome-calendar.svg)](https://gitlab.gnome.org/[...]
     before,remainder=original.split(START,1);_,after=remainder.split(END,1)
     updated=before+START+'\n'+section+'\n'+END+after
     from render_gnome_card import render_card,render_calendar
