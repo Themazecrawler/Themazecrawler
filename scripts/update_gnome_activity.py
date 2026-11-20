@@ -11,9 +11,10 @@ from datetime import datetime, timezone
 import json
 from pathlib import Path
 import random
+import re
 import time
 from urllib.error import HTTPError, URLError
-from urllib.parse import urlencode
+from urllib.parse import quote, urlencode
 from urllib.request import Request, urlopen
 
 BASE = 'https://gitlab.gnome.org'
@@ -68,22 +69,42 @@ def pages(path, **params):
     return result
 
 
+def profile_projects(kind):
+    """List a user's projects via the public profile tabs.
+
+    gitlab.gnome.org now rejects anonymous /api/v4/users/* requests with 406,
+    so read the profile's project list and resolve each path to an id.
+    """
+    paths = []
+    for page in range(1, 51):
+        html = get_url(BASE + f'/users/{USERNAME}/{kind}.json?page={page}')[0].get('html', '')
+        found = [p for p in re.findall(r'class="project" href="/([^"]+)"', html) if p not in paths]
+        if not found:
+            break
+        paths.extend(found)
+    projects = []
+    for path in paths:
+        try:
+            projects.append(get('/projects/' + quote(path, safe=''))[0])
+        except HTTPError as error:
+            if error.code != 404:
+                raise
+            print(f'Skipping unavailable GitLab project {path}', flush=True)
+    return projects
+
+
 def main():
     now = datetime.now(timezone.utc)
     old_path = ROOT / 'assets' / 'gnome-activity.json'
     old = json.loads(old_path.read_text()) if old_path.exists() else {}
 
-    users, _ = get('/users', username=USERNAME)
-    matches = [u for u in users if u['username'] == USERNAME]
-    if len(matches) != 1:
-        raise RuntimeError('Expected one exact GNOME GitLab account')
-    user = matches[0]
-    uid = user['id']
+    # The /users API is blocked for anonymous clients (HTTP 406), so filter by
+    # username and take the account details from authored MRs/issues instead.
     with ThreadPoolExecutor(max_workers=5) as pool:
-        mr_job = pool.submit(pages, '/merge_requests', scope='all', state='all', author_id=uid)
-        issue_job = pool.submit(pages, '/issues', scope='all', state='all', author_id=uid)
-        project_job = pool.submit(pages, f'/users/{uid}/contributed_projects')
-        owned_job = pool.submit(pages, f'/users/{uid}/projects')
+        mr_job = pool.submit(pages, '/merge_requests', scope='all', state='all', author_username=USERNAME)
+        issue_job = pool.submit(pages, '/issues', scope='all', state='all', author_username=USERNAME)
+        project_job = pool.submit(profile_projects, 'contributed')
+        owned_job = pool.submit(profile_projects, 'projects')
         calendar_job = pool.submit(get_url, BASE + f'/users/{USERNAME}/calendar.json')
         mrs = mr_job.result()
         issues = issue_job.result()
@@ -105,6 +126,11 @@ def main():
             calendar = old['calendar']
         else:
             raise RuntimeError('Invalid native contribution calendar')
+
+    authored = [i['author'] for i in mrs + issues if i.get('author', {}).get('username') == USERNAME]
+    user = authored[0] if authored else old.get('user')
+    if not user:
+        raise RuntimeError('Could not determine the GNOME GitLab account')
 
     contributed_ids = {p['id'] for p in projects} | {m['target_project_id'] for m in mrs} | set(old.get('contributed_project_ids', []))
     repo_ids = contributed_ids | {p['id'] for p in owned} | {m['source_project_id'] for m in mrs if m.get('source_project_id')}
@@ -137,16 +163,17 @@ def main():
     metrics = {'mrs': len(mrs), 'issues': len(issues), 'projects': len(contributed_ids), 'commits': len(commit_ids)}
     readme = ROOT / 'README.md'
     original = readme.read_text()
-    if original.count(START) != 1 or original.count(END) != 1:
-        raise RuntimeError('Expected exactly one activity marker pair')
-
-    section = """[![GNOME GitLab Stats](./assets/gnome-stats.svg)](https://gitlab.gnome.org/themazecrawler)
+    # The README may embed the SVGs directly; only rewrite it when the
+    # optional marker pair is present.
+    updated = original
+    if original.count(START) == 1 and original.count(END) == 1:
+        section = """[![GNOME GitLab Stats](./assets/gnome-stats.svg)](https://gitlab.gnome.org/themazecrawler)
 
 [![GitLab Contribution Calendar](./assets/gnome-calendar.svg)](https://gitlab.gnome.org/themazecrawler)
 """
-    before, remainder = original.split(START, 1)
-    _, after = remainder.split(END, 1)
-    updated = before + START + '\n' + section + END + after
+        before, remainder = original.split(START, 1)
+        _, after = remainder.split(END, 1)
+        updated = before + START + '\n' + section + END + after
 
     from render_gnome_card import render_card, render_calendar
 
@@ -156,6 +183,7 @@ def main():
         json.dumps(
             {
                 'username': USERNAME,
+                'user': {'id': user['id'], 'name': user['name']},
                 'updated': now.strftime('%Y-%m-%d'),
                 'metrics': metrics,
                 'contributed_project_ids': sorted(contributed_ids),
