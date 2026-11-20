@@ -2,9 +2,9 @@
         <title id="titleId">Themazecrawler's GitLab Stats</title>
         <desc id="descId">Total Merge Requests: 10, Total Issues: 0, Total Projects: 3, Total Commits: 42. Public authored issues, contributed projects, and unique authored commit SHAs across public repositories.</desc>
         <style>
-      .header {font:600 18px 'Segoe UI',Ubuntu,Sans-Serif;fill:#e2e9ec}
-      .stat {font:600 14px 'Segoe UI',Ubuntu,'Helvetica Neue',Sans-Serif;fill:#e5289e}
-      .icon {fill:#ef8539}
+      .header {font:600 18px 'Segoe UI',Ubuntu,Sans-Serif;fill:#493344}
+      .stat {font:600 14px 'Segoe UI',Ubuntu,'Helvetica Neue',Sans-Serif;fill:#E88EAD}
+      .icon {fill:#B875A8}
     </style>
 
         
@@ -14,7 +14,7 @@
         </defs>
         
 
-        <rect data-testid="card-bg" class="card-bg" x="0.5" y="0.5" rx="4.5" height="99%" stroke="#e4e2e2" width="466" fill="#2b213a" stroke-opacity="1" />
+        <rect data-testid="card-bg" class="card-bg" x="0.5" y="0.5" rx="4.5" height="99%" stroke="#E8B4D0" width="466" fill="#FFF1F5" stroke-opacity="1" />
 
         
       <g data-testid="card-title" transform="translate(25, 35)">
