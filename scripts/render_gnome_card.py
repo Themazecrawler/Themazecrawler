@@ -1,4 +1,4 @@
-"""Generate the profile's Synthwave stats card and green contribution grid."""
+"""Generate the profile's pastel pink stats card and contribution grid."""
 from datetime import timedelta
 from copy import deepcopy
 import xml.etree.ElementTree as ET
@@ -16,10 +16,12 @@ def render_card(root,metrics):
     svg.find(q('desc')).text=', '.join(f'{label} {value}' for label,value in zip(labels,values))+'. Public authored issues, contributed projects, and unique authored commit SHAs across public repositories.'
     svg.set('aria-labelledby','titleId descId')
     svg.find(q('style')).text="""
-      .header {font:600 18px 'Segoe UI',Ubuntu,Sans-Serif;fill:#e2e9ec}
-      .stat {font:600 14px 'Segoe UI',Ubuntu,'Helvetica Neue',Sans-Serif;fill:#e5289e}
-      .icon {fill:#ef8539}
+      .header {font:600 18px 'Segoe UI',Ubuntu,Sans-Serif;fill:#493344}
+      .stat {font:600 14px 'Segoe UI',Ubuntu,'Helvetica Neue',Sans-Serif;fill:#E88EAD}
+      .icon {fill:#B875A8}
     """
+    card=next(r for r in svg.iter(q('rect')) if r.get('data-testid')=='card-bg')
+    card.set('fill','#FFF1F5');card.set('stroke','#E8B4D0')
     for node in svg.iter(q('text')):
         if node.get('data-testid')=='header':node.text="Themazecrawler's GitLab Stats"
     body=next(g for g in svg.iter(q('g')) if g.get('data-testid')=='main-card-body')
@@ -51,11 +53,11 @@ def render_calendar(root,counts,today):
     ET.SubElement(svg,q('title'),{'id':'calendar-title'}).text='GitLab Contribution Calendar'
     total=sum(value for day,value in counts.items() if since.isoformat()<=day<=today.isoformat())
     ET.SubElement(svg,q('desc'),{'id':'calendar-desc'}).text=f'{total} public contributions in the last 365 days, from the native GNOME GitLab calendar.'
-    ET.SubElement(svg,q('rect'),{'x':'.5','y':'.5','width':str(width-1),'height':'209','rx':'4.5','fill':'#2b213a','stroke':'#e4e2e2'})
-    style=ET.SubElement(svg,q('style'));style.text="text{font-family:'Segoe UI',Ubuntu,Sans-Serif;fill:#e2e9ec}.title{font-size:18px;font-weight:600}.label{font-size:10px}.caption{font-size:11px;fill:#b7a7c6}"
+    ET.SubElement(svg,q('rect'),{'x':'.5','y':'.5','width':str(width-1),'height':'209','rx':'4.5','fill':'#FFF1F5','stroke':'#E8B4D0'})
+    style=ET.SubElement(svg,q('style'));style.text="text{font-family:'Segoe UI',Ubuntu,Sans-Serif;fill:#493344}.title{font-size:18px;font-weight:600}.label{font-size:10px}.caption{font-size:11px;fill:#B875A8}"
     ET.SubElement(svg,q('text'),{'x':'25','y':'30','class':'title'}).text='GitLab Contribution Calendar'
     ET.SubElement(svg,q('text'),{'x':str(width-25),'y':'29','class':'caption','text-anchor':'end'}).text=f'{total} contributions in the last year'
-    colors=['#382c49','#0e4429','#006d32','#26a641','#39d353']
+    colors=['#F6DCE6','#F4A6C1','#E88EAD','#C98BBE','#B875A8']
     maximum=max([v for day,v in counts.items() if since.isoformat()<=day<=today.isoformat()]+[1])
     previous_month=None
     for week in range(weeks):
